@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			addTextToResults("Byee,but before going check out my portfolio by typing home 😃😃😃");
 			 
 		}
-		else if(textInputValueLowerCase.includes("bsdk") || textInputValueLowerCase.includes("fuck") || textInputValueLowerCase.includes("madarchod"))
+		else if(textInputValueLowerCase.includes("bsdk") || textInputValueLowerCase.includes("fuck") || textInputValueLowerCase.includes("madarchod") || textInputValueLowerCase.includes("bhosdike"))
 		{	clearInput();
-			addTextToResults("<b>See cover photo</b>");
+			addTextToResults("<b>See cover photo type love you to remove this page</b>");
 			document.getElementById('back').style.background = "url("+nkl+")"; 
 		}
 		else
