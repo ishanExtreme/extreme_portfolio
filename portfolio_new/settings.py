@@ -25,7 +25,7 @@ SECRET_KEY = '9ld_rn75nz!1(jwrgtl*ih&ugh1m*it7v-f(08wc5(mmp@o1&t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['terminalportfolio.herokuapp.com']
 
 
 # Application definition
@@ -75,6 +75,17 @@ WSGI_APPLICATION = 'portfolio_new.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+if 'TRAVIS' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE':   'django.db.backends.postgresql_psycopg2',
+            'NAME':     'portfolio',
+            'USER':     'postgres',
+            'PASSWORD': '',
+            'HOST':     'localhost',
+            'PORT':     '',
+        }
+    }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
