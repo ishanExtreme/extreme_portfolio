@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+{%load staticfiles%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ishan's Terminal</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'assets/css/sparks.css' %}">
+
+    
+ 
+</head>
+<div id="back" class="gradientCont" style="background:url('{% static 'siteimg/bg.jpg' %}') ">
+	<div class="mainCont">
+		<h2>Ishan's Terminal</h2>
+		<h3>Talk to me like lovers do. Or just say hi and friend-zone me.</h3>
+		<div class="terminalCont">
+			<div id="terminalReslutsCont">
+			</div>
+			<form>
+				<input id="terminalTextInput" type="text" placeholder="chat with me or type home to redirect to my portfolio" autocomplete="off">
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<script src="{% static 'assets/js/sparks.js' %}"></script>
+<script>
+	var product_detail_url = "{% url 'portfolio'  %}"
+	var lovebg = "{% static 'siteimg/lovebg.jpg' %}"
+	var friendbg = "{% static 'siteimg/friendbg.jpg' %}"
+	var nkl = "{% static 'siteimg/nkl.gif' %}"
+</script>
+</html>
+
+
+
+
