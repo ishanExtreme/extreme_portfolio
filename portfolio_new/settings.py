@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9ld_rn75nz!1(jwrgtl*ih&ugh1m*it7v-f(08wc5(mmp@o1&t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['terminalportfolio.herokuapp.com']
+ALLOWED_HOSTS = ['terminalportfolio.herokuapp.com','ishanmishra.codes']
 
 
 # Application definition
